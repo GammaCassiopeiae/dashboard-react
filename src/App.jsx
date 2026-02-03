@@ -17,7 +17,8 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <p>This is my React Vite template for building Dashboard</p>
+      <p>This is my React + Vite template for building Dashboard</p>
+      <p><b>Test Works...!</b></p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -27,7 +28,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        
       </p>
     </>
   )
