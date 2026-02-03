@@ -16,26 +16,13 @@ const customersData = [
     password: "pass456"
   },
   {
-    userID: 3,
-    name: "Mike",
-    surname: "Johnson",
-    email: "mike.j@example.com",
-    password: "mike789"
-  },
-  {
-    userID: 4,
-    name: "Sarah",
-    surname: "Williams",
-    email: "sarah.w@example.com",
-    password: "sarah2023"
-  },
-  {
-    userID: 5,
-    name: "Tom",
-    surname: "Brown",
-    email: "tom.brown@example.com",
-    password: "tombrown99"
+    userID: 2,
+    name: "Julia",
+    surname: "Maine",
+    email: "julia.maine@example.com",
+    password: "pass456"
   }
+
 ];
 
 export default customersData; 

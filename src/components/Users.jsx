@@ -1,7 +1,7 @@
 //My users accounts
 
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; //
+import { useNavigate } from 'react-router-dom';
 import customersData from './Customers'; 
 import './users.scss'
 
@@ -69,20 +69,17 @@ const Users = () => {
     setLoginUserId(user.userID);
     setLoginPassword('');
   };
-  // Update this function in your Users component
-const validatePassword = (user) => {
-  if (loginPassword === user.password) {
-    alert(`Welcome ${user.name} ${user.surname}! Login successful.`);
-    setLoginUserId(null);
-    setLoginPassword('');
-    // Navigate to account page with user ID
-    navigate(`/account/${user.userID}`, { state: { user } });
-  } else {
-    alert('Incorrect password!');
-  }
-};
 
-  
+  const validatePassword = (user) => {
+    if (loginPassword === user.password) {
+      alert(`Welcome ${user.name} ${user.surname}! Login successful.`);
+      setLoginUserId(null);
+      setLoginPassword('');
+      navigate(`/account/${user.userID}`, { state: { user } });
+    } else {
+      alert('Incorrect password!');
+    }
+  };
 
   // Reset form
   const resetForm = () => {
@@ -97,12 +94,10 @@ const validatePassword = (user) => {
   };
 
   return (
-    //<div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
     <div className="usertab">
       <h1></h1>
-
-      {/* Create/Update Form */}
-      <div style={{ marginBottom: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '5px' }}>
+      
+      <div className="user-form">
         <h2>{editingId ? 'Edit User' : 'Add New User'}</h2>
         <form onSubmit={editingId ? handleUpdate : handleCreate}>
           <input
@@ -111,7 +106,6 @@ const validatePassword = (user) => {
             placeholder="Name"
             value={formData.name}
             onChange={handleInputChange}
-            style={{ margin: '5px', padding: '8px' }}
           />
           <input
             type="text"
@@ -119,7 +113,6 @@ const validatePassword = (user) => {
             placeholder="Surname"
             value={formData.surname}
             onChange={handleInputChange}
-            style={{ margin: '5px', padding: '8px' }}
           />
           <input
             type="email"
@@ -127,7 +120,6 @@ const validatePassword = (user) => {
             placeholder="Email"
             value={formData.email}
             onChange={handleInputChange}
-            style={{ margin: '5px', padding: '8px' }}
           />
           <input
             type="password"
@@ -135,54 +127,44 @@ const validatePassword = (user) => {
             placeholder="Password"
             value={formData.password}
             onChange={handleInputChange}
-            style={{ margin: '5px', padding: '8px' }}
           />
-          <button type="submit" style={{ margin: '5px', padding: '8px 15px', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer' }}>
+          <button className="user-btn" type="submit">
             {editingId ? 'Update' : 'Create'}
           </button>
           {editingId && (
-            <button type="button" onClick={resetForm} style={{ margin: '5px', padding: '8px 15px', backgroundColor: '#f44336', color: 'white', border: 'none', cursor: 'pointer' }}>
+            <button type="button" onClick={resetForm}>
               Cancel
             </button>
           )}
         </form>
       </div>
 
-      {/* Users Table */}
-      <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ddd' }}>
+      
+      <table className="user-table">
         <thead>
-          <tr style={{ backgroundColor: '#f2f2f2' }}>
-            <th style={{ border: '1px solid #ddd', padding: '12px', textAlign: 'left' }}>User ID</th>
-            <th style={{ border: '1px solid #ddd', padding: '12px', textAlign: 'left' }}>Name</th>
-            <th style={{ border: '1px solid #ddd', padding: '12px', textAlign: 'left' }}>Surname</th>
-            <th style={{ border: '1px solid #ddd', padding: '12px', textAlign: 'left' }}>Email</th>
-            <th style={{ border: '1px solid #ddd', padding: '12px', textAlign: 'left' }}>Actions</th>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {users.map((user) => (
             <tr key={user.userID}>
-              <td style={{ border: '1px solid #ddd', padding: '12px' }}>{user.userID}</td>
-              <td style={{ border: '1px solid #ddd', padding: '12px' }}>{user.name}</td>
-              <td style={{ border: '1px solid #ddd', padding: '12px' }}>{user.surname}</td>
-              <td style={{ border: '1px solid #ddd', padding: '12px' }}>{user.email}</td>
-              <td style={{ border: '1px solid #ddd', padding: '12px' }}>
-                <button 
-                  onClick={() => handleEdit(user)}
-                  style={{ margin: '2px', padding: '5px 10px', backgroundColor: '#2196F3', color: 'white', border: 'none', cursor: 'pointer' }}
-                >
+              <td>{user.userID}</td>
+              <td>{user.name}</td>
+              <td>{user.surname}</td>
+              <td>{user.email}</td>
+              <td>
+                <button onClick={() => handleEdit(user)}>
                   Edit
                 </button>
-                <button 
-                  onClick={() => handleDelete(user.userID)}
-                  style={{ margin: '2px', padding: '5px 10px', backgroundColor: '#f44336', color: 'white', border: 'none', cursor: 'pointer' }}
-                >
+                <button onClick={() => handleDelete(user.userID)}>
                   Delete
                 </button>
-                <button 
-                  onClick={() => handleLogin(user)}
-                  style={{ margin: '2px', padding: '5px 10px', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer' }}
-                >
+                <button onClick={() => handleLogin(user)}>
                   Enter Account
                 </button>
               </td>
@@ -191,28 +173,20 @@ const validatePassword = (user) => {
         </tbody>
       </table>
 
-      {/* Password Validation Modal */}
+      
       {loginUserId && (
-        <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: 'white', padding: '30px', border: '2px solid #333', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
-          <h3>Enter Password</h3>
-          <p>User: {users.find(u => u.userID === loginUserId)?.name} {users.find(u => u.userID === loginUserId)?.surname}</p>
+        <div className="login-user">
+          <p>Enter Password - User: {users.find(u => u.userID === loginUserId) ?.name} {users.find(u => u.userID === loginUserId)?.surname}</p>
           <input
             type="password"
             placeholder="Password"
             value={loginPassword}
             onChange={(e) => setLoginPassword(e.target.value)}
-            style={{ padding: '8px', width: '100%', marginBottom: '10px' }}
           />
-          <button 
-            onClick={() => validatePassword(users.find(u => u.userID === loginUserId))}
-            style={{ margin: '5px', padding: '8px 15px', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer' }}
-          >
+          <button className="login-btn" onClick={() => validatePassword(users.find(u => u.userID === loginUserId))}>
             Login
           </button>
-          <button 
-            onClick={() => { setLoginUserId(null); setLoginPassword(''); }}
-            style={{ margin: '5px', padding: '8px 15px', backgroundColor: '#f44336', color: 'white', border: 'none', cursor: 'pointer' }}
-          >
+          <button className="cancel-btn" onClick={() => { setLoginUserId(null); setLoginPassword(''); }}>
             Cancel
           </button>
         </div>
