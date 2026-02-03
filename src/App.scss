@@ -1,8 +1,11 @@
-#root {
+ /*#root {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  align-items: left;
 }
 
 .logo {
@@ -18,25 +21,89 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+*/
+// Sidebar styling
+// Sidebar styling
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px; // Adjust width as needed
+  height: 100vh;
+  background-color: #2c3e50; // Adjust color as needed
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+// Main content wrapper to account for fixed sidebar
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Navbar styling
+.navbar {
+  position: fixed;
+  left: 250px; // Same as sidebar width
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  height: 70px; // Adjust as needed
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  max-width: 100%;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+
+  li {
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+page-container{
+  display: flex;
+  flex-direction: row; // Changed from 'center' (invalid value)
+  padding: 10px;
+  max-width: 1200px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+// Main content area

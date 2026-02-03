@@ -1,0 +1,70 @@
+{
+  "posts":[],
+  
+  "statistics": [
+    {
+      "id": 1,
+      "category": "Web Development",
+      "value": 85,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Website performance score"
+    },
+    {
+      "id": 2,
+      "category": "Mobile Development",
+      "value": 78,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "App performance score"
+    },
+    {
+      "id": 3,
+      "category": "User Engagement",
+      "value": 65,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Average session duration"
+    },
+    {
+      "id": 4,
+      "category": "Conversion Rate",
+      "value": 4.2,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Overall conversion rate"
+    },
+    {
+      "id": 5,
+      "category": "Customer Satisfaction",
+      "value": 92,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Net Promoter Score"
+    },
+    {
+      "id": 6,
+      "category": "Server Uptime",
+      "value": 99.95,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Monthly uptime"
+    },
+    {
+      "id": 7,
+      "category": "Page Load Time",
+      "value": 1.2,
+      "unit": "s",
+      "date": "2026-01-20",
+      "description": "Average load time"
+    },
+    {
+      "id": 8,
+      "category": "Error Rate",
+      "value": 0.3,
+      "unit": "%",
+      "date": "2026-01-20",
+      "description": "Error rate per request"
+    }
+  ]
+}
