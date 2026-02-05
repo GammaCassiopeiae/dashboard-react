@@ -96,7 +96,6 @@ const Users = () => {
   return (
     <div className="usertab">
       <h1></h1>
-      
       <div className="user-form">
         <h2>{editingId ? 'Edit User' : 'Add New User'}</h2>
         <form onSubmit={editingId ? handleUpdate : handleCreate}>

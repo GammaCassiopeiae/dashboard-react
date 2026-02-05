@@ -728,6 +728,7 @@
   h2 {
     margin-top: 0;
     margin-bottom: 20px;
+    
   }
 
   form {
@@ -802,10 +803,12 @@
   border-collapse: collapse;
   border: 1px solid #ddd;
   font-size: 14px;
+  
 
   thead {
     tr {
-      background-color: #f2f2f2;
+      background-color: black;
+     
 
       th {
         border: 1px solid #ddd;
