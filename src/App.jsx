@@ -10,17 +10,25 @@ import Logout from './components/Logout';
 import Dashboard from './components/Dashboard'; //
 import Finance from './components/Finance'; //
 import FetchAPI from './components/FetchAPI';
-import Calculator from './components/Calculator';
+import CryptoFetcher from './components/CryptoFetcher';
+import FetchAll from './components/FetchAll';
+import GoldPriceChart from './components/GoldPriceChart';
+//import CryptoDisplay from './components/CryptoDisplay';
+//import Calculator from './components/Calculator';
 import Users from './components/Users';
 import Account from './components/Account';
+
+
+
 import './App.scss';
 
 function App() {
   //const [statistics, setStatistics] = useState([]);
   return (
-    <>
-    <Sidebar />
+    
+    
     <Router>
+    <Sidebar />
       <nav className="navbar">
         <div className="nav-container">
           <ul className="nav-menu">
@@ -30,6 +38,9 @@ function App() {
             <li><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/finance">Finance</Link></li>
             <li><Link to="/fetchapi">FetchAPI</Link></li>
+            <li><Link to="/cryptofetch">Crypto</Link></li> 
+            <li><Link to="/fetchall">FetchAll</Link></li>
+            <li><Link to="/goldprices">GoldPriceChart</Link></li>
             <li><Link to="/users">Users</Link></li>
             <li><Link to="/logout">Logout</Link></li>
           </ul>
@@ -43,55 +54,16 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/finance" element={<Finance />} />
         <Route path="/fetchapi" element={<FetchAPI />} />
-        <Route path="/logout" element={<Logout />} />
+        <Route path="/cryptofetch" element={<CryptoFetcher />}/>
+        <Route path="/fetchall" element={<FetchAll />}/>
+        <Route path="/goldprices" element={<GoldPriceChart />}/>
         <Route path="/users" element={<Users />} />
-
-        <Route path="/" element={<Users />} />
-        <Route path="/account/:userId" element={<Account />} />
-        
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/account/:userId" element={<Account />} />       
       </Routes>
     </Router>
     
-    
-    
-
-    </>
-  );
-}
+  )
+};
 
 export default App;
-
-
-
-/*
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Contact from './components/Contact'
-
-
-function App() {
-  const [count, setCount] = useState(0)
-
-
-  return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Sidebar />
-      <Contact />
-
-
-    </>
-  )
-}
-export default App;  */

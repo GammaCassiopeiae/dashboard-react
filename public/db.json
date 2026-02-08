@@ -1,9 +1,8 @@
 {
-  "posts":[],
-  
+  "posts": [],
   "statistics": [
     {
-      "id": 1,
+      "id": "1",
       "category": "Web Development",
       "value": 85,
       "unit": "%",
@@ -11,7 +10,7 @@
       "description": "Website performance score"
     },
     {
-      "id": 2,
+      "id": "2",
       "category": "Mobile Development",
       "value": 78,
       "unit": "%",
@@ -19,7 +18,7 @@
       "description": "App performance score"
     },
     {
-      "id": 3,
+      "id": "3",
       "category": "User Engagement",
       "value": 65,
       "unit": "%",
@@ -27,7 +26,7 @@
       "description": "Average session duration"
     },
     {
-      "id": 4,
+      "id": "4",
       "category": "Conversion Rate",
       "value": 4.2,
       "unit": "%",
@@ -35,7 +34,7 @@
       "description": "Overall conversion rate"
     },
     {
-      "id": 5,
+      "id": "5",
       "category": "Customer Satisfaction",
       "value": 92,
       "unit": "%",
@@ -43,7 +42,7 @@
       "description": "Net Promoter Score"
     },
     {
-      "id": 6,
+      "id": "6",
       "category": "Server Uptime",
       "value": 99.95,
       "unit": "%",
@@ -51,7 +50,7 @@
       "description": "Monthly uptime"
     },
     {
-      "id": 7,
+      "id": "7",
       "category": "Page Load Time",
       "value": 1.2,
       "unit": "s",
@@ -59,12 +58,60 @@
       "description": "Average load time"
     },
     {
-      "id": 8,
+      "id": "8",
       "category": "Error Rate",
       "value": 0.3,
       "unit": "%",
       "date": "2026-01-20",
       "description": "Error rate per request"
     }
-  ]
+  ],
+  
+  "goldprices": [
+    {
+      "id": 1,
+      "date": "2024-01-01",
+      "price": 2063.50,
+      "region": "North America",
+      "volume": 1200
+    },
+    {
+      "id": 2,
+      "date": "2024-01-02",
+      "price": 2071.30,
+      "region": "Europe",
+      "volume": 980
+    },
+    {
+      "id": 3,
+      "date": "2024-01-03",
+      "price": 2055.80,
+      "region": "Asia",
+      "volume": 1500
+    },
+    {
+      "id": 4,
+      "date": "2024-01-04",
+      "price": 2089.20,
+      "region": "North America",
+      "volume": 1100
+    },
+    {
+      "id": 5,
+      "date": "2024-01-05",
+      "price": 2095.60,
+      "region": "Europe",
+      "volume": 850
+    },
+    {
+      "id": 6,
+      "date": "2024-01-06",
+      "price": 2102.40,
+      "region": "Asia",
+      "volume": 1650
+    }
+  ],
+
+  "cryptocurrencies": []
+  
 }
