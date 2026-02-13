@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import FinancialDashboard from './components/FinancialDashboard';
 //import Blog from './pages/Blog';
 import Sidebar from './components/Sidebar';
 import Logout from './components/Logout';
@@ -34,6 +35,7 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
+            <li><Link to="/dash">Dash</Link></li>
             <li><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/worldbank">WorldBank</Link></li>
             <li><Link to="/finance">Finance</Link></li>
@@ -51,6 +53,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/dash" element={<FinancialDashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/worldbank" element={<WorldBankApi />} />
         <Route path="/finance" element={<Finance />} />
