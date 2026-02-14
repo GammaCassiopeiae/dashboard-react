@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h1>Stock Exchange, Gold prices, Crypto-currencies, Finacial Analytics Dashboard</h1>
+        <h2>Sales, Stocks, Marketing and Finacial Analytics Dashboard</h2>
         
         
         <div className="date-filter">
@@ -130,19 +130,33 @@ const Home = () => {
   );
 };
 
-export default Home; 
+export default Home;  
 
 
-/*import { Link } from 'react-router-dom';
 
+
+/*
 function Home() {
   return (
     <div className="page-container">
       <h1>Welcome to MyApp</h1>
+
+      <div
+      style={{
+        backgroundImage: `url('./public/vite.svg')`, // Relative path from public root
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        height: '400px',
+      }}
+    > 
+    </div>
       <p>This is the home page. Explore our services and portfolio.</p>
+      
+
       <Link to="/services" className="btn">View Services</Link>
     </div>
+
+    
   );
 }
-
 export default Home;  */

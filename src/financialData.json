@@ -1,0 +1,33 @@
+{
+  "stocks": [
+    {"symbol": "AAPL", "price": 175.43, "change": 2.34},
+    {"symbol": "MSFT", "price": 330.12, "change": -1.23},
+    {"symbol": "GOOGL", "price": 138.21, "change": 0.76},
+    {"symbol": "AMZN", "price": 145.87, "change": 3.45},
+    {"symbol": "TSLA", "price": 248.92, "change": -4.56}
+  ],
+  "gold": [
+    {"date": "2023-01", "price": 1800},
+    {"date": "2023-02", "price": 1820},
+    {"date": "2023-03", "price": 1815},
+    {"date": "2023-04", "price": 1830},
+    {"date": "2023-05", "price": 1845},
+    {"date": "2023-06", "price": 1850},
+    {"date": "2023-07", "price": 1860},
+    {"date": "2023-08", "price": 1875}
+  ],
+  "economic": [
+    {"indicator": "GDP Growth", "value": 2.1, "change": 0.3},
+    {"indicator": "Inflation", "value": 3.2, "change": -0.1},
+    {"indicator": "Unemployment", "value": 3.8, "change": -0.2},
+    {"indicator": "Interest Rate", "value": 5.25, "change": 0.25}
+  ],
+  "financial": [
+    {"month": "Jan", "revenue": 1200000, "expenses": 800000},
+    {"month": "Feb", "revenue": 1350000, "expenses": 850000},
+    {"month": "Mar", "revenue": 1420000, "expenses": 900000},
+    {"month": "Apr", "revenue": 1580000, "expenses": 950000},
+    {"month": "May", "revenue": 1650000, "expenses": 1000000},
+    {"month": "Jun", "revenue": 1720000, "expenses": 1050000}
+  ]
+}

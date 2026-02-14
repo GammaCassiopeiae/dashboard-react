@@ -1,18 +1,6 @@
 
-/*
-// Mock Yahoo Finance API data (replace with actual API calls)
-const mockYahooData = [
-  { symbol: 'AAPL', name: 'Apple Inc.', price: 180.5, change: 2.3, percent: 1.3 },
-  { symbol: 'GOOGL', name: 'Alphabet Inc.', price: 145.2, change: 1.8, percent: 1.25 },
-  { symbol: 'MSFT', name: 'Microsoft Corp.', price: 385.7, change: 3.5, percent: 0.92 },
-  { symbol: 'TSLA', name: 'Tesla Inc.', price: 250.1, change: -5.2, percent: -2.02 },
-  { symbol: 'AMZN', name: 'Amazon.com Inc.', price: 140.8, change: 0.4, percent: 0.29 },
-  { symbol: 'NVDA', name: 'NVIDIA Corp.', price: 1050.3, change: 12.5, percent: 1.21 }
-];  */
-
-
 import React, { useState, useEffect, useRef } from 'react';
-import './Finance.scss';
+import '../styles/Finance.scss';  //The .. means "go up one directory level" (from components to src), then access styles/Finance.scss.
 
 const Finance = () => {
   const [yahooData, setYahooData] = useState([]);
@@ -294,5 +282,17 @@ const Finance = () => {
     </div>
   );
 };
+
+
+/*
+// Mock Yahoo Finance API data (replace with actual API calls)
+const mockYahooData = [
+  { symbol: 'AAPL', name: 'Apple Inc.', price: 180.5, change: 2.3, percent: 1.3 },
+  { symbol: 'GOOGL', name: 'Alphabet Inc.', price: 145.2, change: 1.8, percent: 1.25 },
+  { symbol: 'MSFT', name: 'Microsoft Corp.', price: 385.7, change: 3.5, percent: 0.92 },
+  { symbol: 'TSLA', name: 'Tesla Inc.', price: 250.1, change: -5.2, percent: -2.02 },
+  { symbol: 'AMZN', name: 'Amazon.com Inc.', price: 140.8, change: 0.4, percent: 0.29 },
+  { symbol: 'NVDA', name: 'NVIDIA Corp.', price: 1050.3, change: 12.5, percent: 1.21 }
+];  */
 
 export default Finance;

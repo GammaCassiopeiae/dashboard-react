@@ -1,8 +1,9 @@
+
 // Dashboard.scss
 .dashboard {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
-  color: #333;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f2a4d 100%);
+  color: grey;
   padding: 24px;
   margin-left: 260px;
   margin-top: 50px;
@@ -17,11 +18,12 @@
     margin-bottom: 32px;
     padding-bottom: 16px;
     border-bottom: 1px solid #e9ecef;
+    
 
-    h1 {
+    h2 {
       font-weight: 700;
       font-size: 28px;
-      color: #212529;
+      color: white;
     }
 
     .date-filter {
@@ -302,45 +304,3 @@
     }
   }
 }
-
-
-
-
-
-
-/*
-function Home() {
-  return (
-    <div className="page-container">
-      <h1>Welcome to MyApp</h1>
-
-      <div
-      style={{
-        backgroundImage: `url('./public/vite.svg')`, // Relative path from public root
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '400px',
-      }}
-    > 
-    </div>
-      <p>This is the home page. Explore our services and portfolio.</p>
-      
-
-      <Link to="/services" className="btn">View Services</Link>
-    </div>
-
-    
-  );
-}
-export default Home;  */
-
-
-
-
-
-
-
-
-
-
-

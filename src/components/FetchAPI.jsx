@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Finance.scss';
+import '../styles/Finance.scss';
 
 function FetchAPI() {
   const [posts, setPosts] = useState([]);
