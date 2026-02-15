@@ -1144,7 +1144,7 @@ export default Portfolio;
 
 */
 import React, { useState, useEffect } from 'react';
-import './Portfolio.scss';
+import '../styles/Portfolio.scss';
 
 const Portfolio = () => {
   const [stocks, setStocks] = useState([]);

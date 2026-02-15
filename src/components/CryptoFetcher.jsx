@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CryptoFetcher.scss';
+import '../styles/CryptoFetcher.scss';
 
 const CryptoFetcher = () => {
   const [cryptoData, setCryptoData] = useState([]);

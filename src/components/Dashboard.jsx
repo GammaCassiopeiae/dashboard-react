@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Dashboard.scss';
+import '../styles/Dashboard.scss';
 
 const Dashboard = () => {
   const [statistics, setStatistics] = useState([]);

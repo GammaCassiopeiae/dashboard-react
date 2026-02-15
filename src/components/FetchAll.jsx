@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './FetchAll.scss';
+import '../styles/FetchAll.scss';
 
 const FetchAll = () => {
   const [allData, setAllData] = useState([]);

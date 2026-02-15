@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 //port CryptoVault from './components/CryptoVault';
-import './Sidebar.scss';
+import '../styles/Sidebar.scss';
 
 
 const Sidebar = () => {

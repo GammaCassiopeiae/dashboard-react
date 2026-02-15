@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './GoldPriceChart.scss';
+import '../styles/GoldPriceChart.scss';
 
 const GoldPriceChart = () => {
   // Mock data - this will be replaced by fetched data

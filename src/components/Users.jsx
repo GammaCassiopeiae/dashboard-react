@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import customersData from './Customers'; 
-import './users.scss'
+import '../styles/users.scss'
 
 const Users = () => {
     const navigate = useNavigate();

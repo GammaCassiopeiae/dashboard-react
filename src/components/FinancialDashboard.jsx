@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './FinancialDashboard.scss';
-
+import '../styles/FinancialDashboard.scss';
 
 export default function FinancialDashboard() {
   const [financialData, setFinancialData] = useState([]);

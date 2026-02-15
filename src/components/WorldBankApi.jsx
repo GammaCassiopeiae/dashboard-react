@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './WorldBankApi.scss';
+import '../styles/WorldBankApi.scss';
 
 const CurrencyConverter = () => {
   // Mock exchange rates (relative to USD)

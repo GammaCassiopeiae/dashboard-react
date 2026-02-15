@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
-import './Account.scss';
-import './CreditCardForm.scss';
+import '../styles/Account.scss';
+import '../styles/CreditCardForm.scss';
 import CreditCardForm from './CreditCardForm';
 import Portfolio from './Portfolio';
 
