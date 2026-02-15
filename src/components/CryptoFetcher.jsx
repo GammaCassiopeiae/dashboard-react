@@ -70,7 +70,8 @@ const CryptoFetcher = () => {
   return (
     <div className="crypto-fetcher">
       <div className="crypto-fetcher__header">
-        <h2>Coinlore API Data Fetcher</h2>
+        <h2>Coinlore Crypto API Data💱</h2>
+        
         <button 
           onClick={handleFetchAndSave}
           disabled={loading}
@@ -130,7 +131,14 @@ const CryptoFetcher = () => {
           </table>
         </div>
       )}
-    </div>
+      <div><p>Crypto coins are digital assets that operate on their own dedicated blockchain network </p></div>
+      <div><p>and function as a medium of exchange or store of value, similar to traditional money. </p></div>
+      <div><p>They are the native cryptocurrency of a specific blockchain, such as Bitcoin (BTC) on  </p></div>
+      <div><p>blockchain or Ether (ETH) on the Ethereum blockchain networking infrastructure.</p></div>
+  
+     </div>
+    
+    
   );
 };
 

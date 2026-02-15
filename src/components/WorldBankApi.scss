@@ -1,6 +1,9 @@
+
+/*
 .currency-converter{
   display: flex;
   flex-direction: center;
+  align-items:center;
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -8,6 +11,250 @@
   padding-top: 50px;
   margin-bottom: 0;
   margin-top: 0;
-  margin-left: 400px; 
+  margin-left: 360px; 
   width: calc(100% - 150px);
-}  
+}  */
+
+
+
+// Variables
+$primary-green: #0d4d3d;
+$secondary-green: #1a6b54;
+$accent-green: #2d8a6e;
+$light-green: #e8f5f1;
+$white: #ffffff;
+$black: black;
+$text-dark: #1a3a32;
+$text-light: #5a7a70;
+$border-color: #c5d9d3;
+$shadow-sm: 0 2px 8px rgba(13, 77, 61, 0.08);
+$shadow-md: 0 4px 16px rgba(13, 77, 61, 0.12);
+$shadow-lg: 0 8px 24px rgba(13, 77, 61, 0.16);
+
+.currency-converter {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 2rem 1rem;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  margin-left: 280px;
+
+  h1 {
+    color: $primary-green;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    grid-column: 1 / -1;
+  }
+
+  // Grid container for both blocks
+  .converter-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  // Main converter box (LEFT - Amount)
+  .converter-box {
+    background: $black;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: $shadow-lg;
+    border: 1px solid $border-color;
+    transition: box-shadow 0.3s ease;
+    grid-column: 1;
+    gap: 5px;
+
+    &:hover {
+      box-shadow: 0 12px 32px rgba(13, 77, 61, 0.2);
+    }
+  }
+
+  // Input groups
+  .input-group {
+    margin-bottom: 1.25rem;
+
+    label {
+      display: block;
+      color: $text-dark;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $text-dark;
+      background: $white;
+      border: 2px solid $border-color;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      height: 42px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: $secondary-green;
+        box-shadow: 0 0 0 3px rgba(29, 107, 84, 0.1);
+      }
+
+      &:hover {
+        border-color: $accent-green;
+      }
+    }
+
+    input[type="number"] {
+      line-height: normal;
+    }
+
+    select {
+      cursor: pointer;
+      appearance: none;
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      padding-right: 2.5rem;
+    }
+  }
+
+  // Result display
+  .result {
+    margin-top: 8rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, $primary-green 0%, $secondary-green 100%);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: $shadow-md;
+
+    strong {
+      color: $white;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      display: block;
+    }
+  }
+
+  // Exchange rates section (RIGHT)
+  .exchange-rates {
+    background: $black;
+    margin-top: 1px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 400px;
+    box-shadow: $shadow-md;
+    border: 1px solid $border-color;
+    grid-column: 2;
+
+    h2 {
+      color: $primary-green;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      font-size: 13px;
+      border-bottom: 2px solid $secondary-green;
+    }
+  }
+
+  // Rates grid
+  .rates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .rate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: $light-green;
+    border-radius: 6px;
+    border: 1px solid $border-color;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $white;
+      border-color: $accent-green;
+      box-shadow: $shadow-sm;
+      transform: translateY(-2px);
+    }
+
+    .currency {
+      font-weight: 700;
+      color: $primary-green;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    .value {
+      font-weight: 600;
+      color: $text-dark;
+      font-size: 0.85rem;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    
+    .converter-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .converter-box {
+      padding: 1.25rem;
+    }
+
+    .result strong {
+      font-size: 1rem;
+    }
+
+    .rates-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .exchange-rates {
+      padding: 1.25rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Remove number input spinners for cleaner look
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

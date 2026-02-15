@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
+
 import Services from './pages/Services';
 
 import FinancialDashboard from './components/FinancialDashboard';
@@ -11,6 +11,7 @@ import WorldBankApi from './components/WorldBankApi';
 import Sidebar from './components/Sidebar';
 
 import CryptoVault from './components/CryptoVault';
+import ContactForm from './pages/ContactForm';
 
 import Logout from './components/Logout';
 import Dashboard from './components/Dashboard'; //
@@ -40,8 +41,6 @@ function App() {
           <ul className="nav-menu">
             <li><Link to="/">Home</Link></li>
             
-            
-                    
             <li><Link to="/dash">FinancialDashboard</Link></li>
             <li><Link to="/worldbank">WorldBank</Link></li>
             
@@ -60,10 +59,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+       
         <Route path="/services" element={<Services />} />
         <Route path="/dash" element={<FinancialDashboard />} />
-       
         <Route path="/worldbank" element={<WorldBankApi />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/finance" element={<Finance />} />
@@ -71,8 +69,9 @@ function App() {
         <Route path="/cryptofetch" element={<CryptoFetcher />}/>
         <Route path="/fetchall" element={<FetchAll />}/>
         <Route path="/goldprices" element={<GoldPriceChart />}/>
-        <Route path="/users" element={<Users />} />
-       <Route path="/cryptovault" element={<CryptoVault />} />
+        <Route path="/users" element={<Users />}/>
+        <Route path="/cryptovault" element={<CryptoVault />} />
+        <Route path="/contact" element={<ContactForm />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/account/:userId" element={<Account />} />       
       </Routes>
