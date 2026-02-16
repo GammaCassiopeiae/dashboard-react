@@ -11,12 +11,10 @@ const Sidebar = () => {
           <p><b>Dashboard</b></p>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/dashboard">Our Services</Link></li>
-          <li><Link to="/services">Services</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/users">Users</Link></li>
           <li><Link to="/cryptovault">Crypto Vault</Link></li>
 
-          
         </aside>
   
        

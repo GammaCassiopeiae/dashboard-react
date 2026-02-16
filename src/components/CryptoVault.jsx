@@ -149,7 +149,22 @@ const CryptoVault = () => {
               <span>- $312.45 today</span>
             </div>
           </div>
+          <div className="card">
+            <div className="card-header">
+              <h3 className="card-title">Gross Value</h3>
+              <div className="card-change negative">
+                <span>↓ 0.8%</span>
+              </div>
+            </div>
+            <div className="card-value">$38,720.12</div>
+            <div className="card-change negative">
+              <span>- $318.25 today</span>
+            </div>
+          </div>
         </div>
+
+        
+          
 
         {/* Crypto Table */}
         <div className="table-container">
@@ -231,6 +246,9 @@ const CryptoVault = () => {
         </div>
       </div>
     </div>
+    
+    
+
   );
 };
 

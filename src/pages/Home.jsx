@@ -9,11 +9,11 @@ const Home = () => {
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h2>Sales, Stocks, Marketing and Finacial Analytics Dashboard</h2>
+        <h2>Sales, Stocks, Marketing and Finacial Analytics Dashboard Template</h2>
         
         
         <div className="date-filter">
-          <span>Last 30 days</span>
+          <span></span>
           <button className="refresh-btn">Refresh</button>
         </div>
       </div>
@@ -54,22 +54,10 @@ const Home = () => {
             <p>Total Orders</p>
           </div>
           <div className="metric-trend negative">
-            <i className="fas fa-arrow-down"></i> 2.1%
+            <i className="fas fa-arrow-down"></i> -2.1%
           </div>
         </div>
 
-        <div className="metric-card">
-          <div className="metric-icon conversion">
-            <i className="fas fa-percentage"></i>
-          </div>
-          <div className="metric-info">
-            <h3>4.8%</h3>
-            <p>Conversion Rate</p>
-          </div>
-          <div className="metric-trend positive">
-            <i className="fas fa-arrow-up"></i> 1.2%
-          </div>
-        </div>
       </div>
 
       <div className="charts-row">
@@ -90,7 +78,7 @@ const Home = () => {
             <div className="pie-chart">
               <div className="slice" style={{ 
                 clipPath: 'polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%)',
-                backgroundColor: '#4361ee'
+                backgroundColor: '#4361ee', 
               }}></div>
               <div className="slice" style={{ 
                 clipPath: 'polygon(50% 50%, 100% 100%, 0% 100%, 0% 0%, 50% 0%, 50% 50%)',
@@ -105,58 +93,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="recent-activity">
-        <Link to="/users" className="btn">Go to Users</Link>
-        <h3>Recent Activity</h3>
-        <div className="activity-list">
-          {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="activity-item">
-              <div className="activity-icon">
-                <i className="fas fa-user-plus"></i>
-              </div>
-              <div className="activity-content">
-                <h4>New User Registered</h4>
-                <p>John Doe joined the platform</p>
-              </div>
-              <span className="activity-time">2 min ago</span>
-            </div>
-          ))}
-        </div>
-      </div>
-      <Link to="/services" className="btn">View Services</Link>
-      </div>
       
-
+      
+    </div>
+  
   );
 };
 
 export default Home;  
 
 
-
-
-/*
-function Home() {
-  return (
-    <div className="page-container">
-      <h1>Welcome to MyApp</h1>
-
-      <div
-      style={{
-        backgroundImage: `url('./public/vite.svg')`, // Relative path from public root
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '400px',
-      }}
-    > 
-    </div>
-      <p>This is the home page. Explore our services and portfolio.</p>
-      
-
-      <Link to="/services" className="btn">View Services</Link>
-    </div>
-
-    
-  );
-}
-export default Home;  */

@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 20px;
     padding: 1.5rem;
     background: rgba(0, 255, 255, 0.05);
     border: 2px solid #00ffff;
@@ -22,7 +23,7 @@
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     background: linear-gradient(90deg, #00ffff, #ff00ff, #00ff41);
     -webkit-background-clip: text;
@@ -30,6 +31,7 @@
     background-clip: text;
     text-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
     margin: 0;
+    width: 400px;
   }
 
   &__refresh-btn {
@@ -40,6 +42,7 @@
     color: #000;
     font-size: 1rem;
     font-weight: bold;
+    margin-right: 600px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);

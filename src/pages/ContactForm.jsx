@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-      <h2>Contact Us</h2>
+      <h2></h2>
       <div className="contact__column">
         <form className="form" onSubmit={handleSubmit} noValidate>
           <div className="form__field">

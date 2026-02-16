@@ -1,28 +1,30 @@
 // GoldPriceChart.scss
 
 .gold-price-chart {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #930a91 0%, #7813dd 100%);
   min-height: 100vh;
   color: black;
   margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 320px; 
+  margin-top: 15px;
+  margin-left: 240px; 
   width: calc(100% - 150px);
+  border-radius: 14px;
 
   &__title {
     text-align: center;
     color: #fff;
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
   }
 
   &__data-table {
-    background: #fff;
+    background: black;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
@@ -85,6 +87,7 @@
       padding: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
+      margin-left: 10px;
 
       &:hover {
         transform: translateY(-5px);
@@ -104,9 +107,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     color: #fff;
     font-weight: bold;
+    font-size: small;
+    margin-top: 30px;
   }
 
   &.error {

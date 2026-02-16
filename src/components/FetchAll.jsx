@@ -496,7 +496,7 @@ const FetchAll = () => {
   return (
     <div className="fetch-all">
       <div className="fetch-all__header">
-        <h1 className="fetch-all__title">Cryptocurrency Data Visualization</h1>
+        <h1 className="fetch-all__title">Cryptocurrency Data</h1>
         <button 
           onClick={fetchAllData}
           disabled={loading}

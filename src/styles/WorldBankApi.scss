@@ -1,22 +1,4 @@
 
-/*
-.currency-converter{
-  display: flex;
-  flex-direction: center;
-  align-items:center;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: black;
-  padding-top: 50px;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 360px; 
-  width: calc(100% - 150px);
-}  */
-
-
-
 // Variables
 $primary-green: #0d4d3d;
 $secondary-green: #1a6b54;
@@ -34,12 +16,12 @@ $shadow-lg: 0 8px 24px rgba(13, 77, 61, 0.16);
 .currency-converter {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   margin-top: 40px;
   padding: 2rem 1rem;
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  margin-left: 280px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  margin-left: 260px;
 
   h1 {
     color: $primary-green;
@@ -77,7 +59,7 @@ $shadow-lg: 0 8px 24px rgba(13, 77, 61, 0.16);
 
   // Input groups
   .input-group {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
 
     label {
       display: block;
@@ -248,7 +230,7 @@ $shadow-lg: 0 8px 24px rgba(13, 77, 61, 0.16);
   }
 }
 
-// Remove number input spinners for cleaner look
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;

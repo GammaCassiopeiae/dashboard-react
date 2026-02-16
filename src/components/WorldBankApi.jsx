@@ -30,7 +30,7 @@ const CurrencyConverter = () => {
 
   return (
     <div className="currency-converter">
-      <h1>💱 Currency Converter</h1>
+      <h1>💱 Converter</h1>
 
       <div className="converter-box">
         <div className="input-group">

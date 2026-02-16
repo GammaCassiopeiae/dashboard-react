@@ -2,7 +2,7 @@
 :root {
   --color-primary: #08a6e4;
   --color-primary-shadow: rgba(7, 172, 230, 0.16);
-  --color-grey: #a5a5a5;
+  --color-grey: grey;
   --color-white: #ffffff;
   --button-radius: 35px;
 }
@@ -14,16 +14,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 900px;
   padding: 40px 20px;
   background-color: #f7f7f7;
   min-height: 100vh;
   margin-left: 200px;
-  margin-top:1px;
+  margin-bottom: 30px;
 
   h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.2em;
     color: #333;
     margin-bottom: 40px;
     animation: fadeInDown 0.6s ease-out;
@@ -198,3 +198,4 @@
     height: 12px;
   }
 }
+

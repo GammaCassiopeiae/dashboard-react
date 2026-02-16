@@ -40,26 +40,20 @@ function App() {
         <div className="nav-container">
           <ul className="nav-menu">
             <li><Link to="/">Home</Link></li>
-            
-            <li><Link to="/dash">FinancialDashboard</Link></li>
+            <li><Link to="/dash">Dashboard</Link></li>
             <li><Link to="/worldbank">WorldBank</Link></li>
-            
             <li><Link to="/finance">Finance</Link></li>
-            <li><Link to="/fetchapi">FetchAPI</Link></li>
             <li><Link to="/cryptofetch">Crypto</Link></li> 
-            <li><Link to="/fetchall">FetchAll</Link></li>
-            <li><Link to="/goldprices">GoldPriceChart</Link></li>
+            <li><Link to="/fetchall">Fetch</Link></li>
+            <li><Link to="/goldprices">GoldPrices</Link></li>
             <li><Link to="/users">Users</Link></li>
-            <li><Link to="/logout">Logout</Link></li>
-            
-            
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
-       
         <Route path="/services" element={<Services />} />
         <Route path="/dash" element={<FinancialDashboard />} />
         <Route path="/worldbank" element={<WorldBankApi />} />
