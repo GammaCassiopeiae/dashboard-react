@@ -11,6 +11,7 @@ npm run dev
 
 npx json-server --watch db.json --port 3001
 
+http://localhost:5173/
 
 Currently, two official plugins are available:
 
